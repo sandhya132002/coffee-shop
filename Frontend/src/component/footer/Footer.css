@@ -1,0 +1,117 @@
+/* Footer Container */
+.footer {
+    background: linear-gradient(135deg, #2c3e50, #34495e); /* Gradient background */
+    color: white;
+    padding: 40px 0;
+    font-family: 'Poppins', sans-serif;
+   
+    animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Footer Headings */
+.footer h5 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #fabf41; /* Accent color */
+    animation: slideInLeft 1s ease-in-out; /* Slide-in animation */
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Footer Paragraphs */
+.footer p {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 10px;
+    animation: fadeIn 1.5s ease-in-out; /* Fade-in animation */
+}
+
+/* Quick Links */
+.footer .footer-link {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+    display: inline-block;
+    animation: slideUp 0.5s ease-in-out; /* Slide-up animation */
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.footer .footer-link:hover {
+    color: #fabf41; /* Accent color on hover */
+}
+
+/* Social Media Icons */
+.footer-social {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-social a {
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+    animation: bounce 1s ease-in-out; /* Bounce animation */
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+.footer-social a:hover {
+    color: #fabf41; /* Accent color on hover */
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer {
+        text-align: center;
+    }
+
+    .footer .row > div {
+        margin-bottom: 30px;
+    }
+
+    .footer-social {
+        justify-content: center;
+    }
+}

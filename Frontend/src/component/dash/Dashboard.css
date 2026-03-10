@@ -1,0 +1,122 @@
+/* Dashboard.css */
+
+/* Full container with dynamic background */
+.dashboard-container {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    padding: 50px;
+}
+
+/* Semi-transparent text overlay */
+.text-overlay {
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 600px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.dashboard-button {
+    background-color: #fbbf24;
+    color: white;
+    /* border: none; */
+    padding: 10px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+
+.dashboard-button:hover {
+    background-color: #333;
+    transform: scale(1.05);
+}
+
+.dashboard-button:active {
+    transform: scale(0.95);
+}
+
+/* Ensuring the link inside behaves correctly */
+.dashboard-button a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .dashboard-container {
+        height: 80vh;
+        padding: 30px;
+    }
+    .text-overlay {
+        max-width: 500px;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .dashboard-container {
+        height: 70vh;
+        padding: 20px;
+    }
+    .text-overlay {
+        max-width: 90%;
+        left: 5%;
+        right: 5%;
+        top: 45%;
+        transform: translateY(-45%);
+    }
+    .text-overlay h1 {
+        font-size: 24px;
+    }
+    .text-overlay p {
+        font-size: 16px;
+    }
+    .dashboard-button {
+        font-size: 14px;
+        padding: 8px 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .dashboard-container {
+        height: 60vh;
+        padding: 15px;
+    }
+    .text-overlay {
+        max-width: 95%;
+        padding: 15px;
+    }
+    .text-overlay h1 {
+        font-size: 20px;
+    }
+    .text-overlay p {
+        font-size: 14px;
+    }
+    .dashboard-button {
+        font-size: 12px;
+        padding: 6px 14px;
+    }
+}

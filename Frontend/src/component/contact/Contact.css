@@ -1,0 +1,162 @@
+/* Full-Screen Background */
+.contact-page {
+    background: url('https://5.imimg.com/data5/SELLER/Default/2021/8/AP/WL/GJ/5504430/roasted-coffee-beans.jpg') no-repeat center center/cover;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+/* Contact Form with Neumorphism Effect */
+.contact-container {
+    max-width: 500px;
+    width: 90%;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5),
+                -20px -20px 50px rgba(255, 255, 255, 0.1);
+    text-align: center;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.contact-container:hover {
+    transform: scale(1.03);
+}
+
+/* Header */
+h2 {
+    font-size: 28px;
+    color: white;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Form */
+.contact-form {
+    margin-top: 20px;
+    text-align: left;
+}
+
+/* Form Group with Icons */
+.form-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.form-group i {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #ffd700;
+}
+
+/* Input Fields */
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px 12px 40px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.form-group textarea {
+    resize: none;
+    height: 120px;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #ffd700;
+    box-shadow: 0px 0px 10px rgba(255, 215, 0, 0.7);
+}
+
+/* Submit Button */
+.btn-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.btn-submit {
+    background: linear-gradient(45deg, #ffd700, #e1ba2f);
+    color: black;
+    border: none;
+    padding: 14px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 30px;
+    width: 60%;
+    font-weight: bold;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 5px 15px rgba(225, 186, 47, 0.5);
+}
+
+/* Hover Effect */
+.btn-submit:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 20px rgba(225, 186, 47, 0.7);
+}
+
+/* Contact Info */
+.contact-info {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.contact-info h3 {
+    font-size: 22px;
+    color: white;
+    font-weight: bold;
+}
+
+.contact-info p {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.contact-info i {
+    color: #ffd700;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .contact-page {
+        padding: 20px 0;
+    }
+
+    .btn-submit {
+        width: 80%;
+    }
+}
